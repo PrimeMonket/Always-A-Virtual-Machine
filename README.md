@@ -34,6 +34,6 @@ cd Always-A-Virtual-Machine
 
 ## Legal
 
-I am not responsible nor liable for any damage this script may cause to you or one other whilst using this project. 
+I am not responsible or liable for any damage this script may cause to you or one other whilst using this project. 
 
 License: GPL-3.0
