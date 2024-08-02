@@ -267,3 +267,4 @@ Write-Host("[38;2;94;214;114m[-] A.A.VM has manipulating the system, check the 
 Write-Host("[38;2;94;214;114mTO help support the project:");
 Write-Host("[38;2;94;214;114m    https://github.com/PrimeMonket/Always-A-Virtual-Machine/ ");
 Write-Host("[38;2;94;214;114m    https://github.com/kernelwernel/VMAware/ ")
+Write-Host("[38;2;94;214;114m    https://github.com/a0rtega/pafish/ ")
