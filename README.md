@@ -32,6 +32,13 @@ cd Always-A-Virtual-Machine
 
 <br>
 
+## Credits
+- [Kernel](https://github.com/kernelwernel) and his project [VMAware](https://github.com/kernelwernel/VMAware)
+- [a0rtega](https://github.com/a0rtega) and his project [PAfish](https://github.com/a0rtega/pafish)
+
+
+
+
 ## Legal
 
 I am not responsible or liable for any damage this script may cause to you or one other whilst using this project. 
