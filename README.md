@@ -26,9 +26,9 @@ cd Always-A-Virtual-Machine
 ```
 
 **Hashes for AAVM.EXE**
-    MD5: 5aeb0395a1aeefd7c6f1450f743bf3e8
-    SHA-1: ba9c84668284581a6a2b3e4ec77b456c751f35cc
-    SHA-256: cc87e7d2b5b488be4b77e7e045106e0157914c0a536e0f67a2cf6aa4d581514c
+    - MD5: 5aeb0395a1aeefd7c6f1450f743bf3e8
+    - SHA-1: ba9c84668284581a6a2b3e4ec77b456c751f35cc
+    - SHA-256: cc87e7d2b5b488be4b77e7e045106e0157914c0a536e0f67a2cf6aa4d581514c
 
 <br>
 
