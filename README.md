@@ -43,4 +43,4 @@ cd Always-A-Virtual-Machine
 
 I am not responsible or liable for any damage this script may cause to you or one other whilst using this project. 
 
-License: GPL-3.0
+[License: GPL-3.0](https://github.com/PrimeMonket/Always-A-Virtual-Machine/blob/main/LICENSE)
