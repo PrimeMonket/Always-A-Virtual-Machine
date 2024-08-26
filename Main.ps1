@@ -91,32 +91,9 @@ $registryKeys = @(
     @{ company = "KVM"; path = "HKLM:\SYSTEM\ControlSet001\Services\BALLOON" },
     @{ company = "KVM"; path = "HKLM:\SYSTEM\ControlSet001\Services\BalloonService" },
     @{ company = "KVM"; path = "HKLM:\SYSTEM\ControlSet001\Services\netkvm" },
-    
-    #BOCHS
-    @{ company = "BOCHS"; path = "HKLM:\HARDWARE\Description\System"; name = "SystemBiosVersion"; value = "BOCHS" },
-    @{ company = "BOCHS"; path = "HKLM:\HARDWARE\Description\System"; name = "VideoBiosVersion"; value = "BOCHS" },
-      
-    #ANUBIS
-    @{ company = "ANUBIS"; path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion"; name = "ProductID"; value = "76487-337-8429955-22614" },
-    @{ company = "ANUBIS"; path = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion"; name = "ProductID"; value = "76487-337-8429955-22614" },
-      
-    #CWSANDBOX
-    @{ company = "CWSANDBOX"; path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion"; name = "ProductID"; value = "76487-644-3177037-23510" },
-    @{ company = "CWSANDBOX"; path = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion"; name = "ProductID"; value = "76487-644-3177037-23510" },
-      
-    #JOEBOX
-    @{ company = "JOEBOX"; path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion"; name = "ProductID"; value = "55274-640-2673064-23950" },
-    @{ company = "JOEBOX"; path = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion"; name = "ProductID"; value = "55274-640-2673064-23950" },
-      
-    #PARALLELES
-    @{ company = "PARALLELS"; path = "HKLM:\HARDWARE\Description\System"; name = "SystemBiosVersion"; value = "PARALLELS" },
-    @{ company = "PARALLELS"; path = "HKLM:\HARDWARE\Description\System"; name = "VideoBiosVersion"; value = "PARALLELS" },
+
+    #PARRALLELS
     @{ company = "PARALLELS"; path = "HKLM:\SYSTEM\CurrentControlSet\Enum\PCI\VEN_1AB8" },
-      
-    #QEMU
-    @{ company = "QEMU"; path = "HKLM:\HARDWARE\Description\System"; name = "SystemBiosVersion"; value = "QEMU" },
-    @{ company = "QEMU"; path = "HKLM:\HARDWARE\Description\System"; name = "VideoBiosVersion"; value = "QEMU" },
-    @{ company = "QEMU"; path = "HKLM:\HARDWARE\Description\System\BIOS"; name = "SystemManufacturer"; value = "QEMU" },
       
     #Hypver-V
     @{ company = "Hyper-V"; path = "HKLM:\SOFTWARE\Microsoft\Hyper-V"},
@@ -132,17 +109,6 @@ $registryKeys = @(
     @{ company = "VBOX"; path = "HKLM:\HARDWARE\ACPI\DSDT\VBOX__\" },
     @{ company = "VBOX"; path = "HKLM:\HARDWARE\ACPI\FADT\VBOX__\" },
     @{ company = "VBOX"; path = "HKLM:\HARDWARE\ACPI\RSDT\VBOX__\" },
-    @{ company = "VBOX"; path = "HKLM:\HARDWARE\Description\System"; name = "SystemBiosVersion"; value = "VBOX" },
-    @{ company = "VBOX"; path = "HKLM:\HARDWARE\Description\System"; name = "VideoBiosVersion"; value = "VIRTUALBOX" },
-    @{ company = "VBOX"; path = "HKLM:\HARDWARE\Description\System\BIOS"; name = "SystemProductName"; value = "VIRTUAL" },
-    @{ company = "VBOX"; path = "HKLM:\SYSTEM\ControlSet001\Services\Disk\Enum"; name = "DeviceDesc"; value = "VBOX" },
-    @{ company = "VBOX"; path = "HKLM:\SYSTEM\ControlSet001\Services\Disk\Enum"; name = "FriendlyName"; value = "VBOX" },
-    @{ company = "VBOX"; path = "HKLM:\SYSTEM\ControlSet002\Services\Disk\Enum"; name = "DeviceDesc"; value = "VBOX" },
-    @{ company = "VBOX"; path = "HKLM:\SYSTEM\ControlSet002\Services\Disk\Enum"; name = "FriendlyName"; value = "VBOX" },
-    @{ company = "VBOX"; path = "HKLM:\SYSTEM\ControlSet003\Services\Disk\Enum"; name = "DeviceDesc"; value = "VBOX" },
-    @{ company = "VBOX"; path = "HKLM:\SYSTEM\ControlSet003\Services\Disk\Enum"; name = "FriendlyName"; value = "VBOX" },
-    @{ company = "VBOX"; path = "HKLM:\SYSTEM\CurrentControlSet\Control\SystemInformation"; name = "SystemProductName"; value = "VIRTUAL" },
-    @{ company = "VBOX"; path = "HKLM:\SYSTEM\CurrentControlSet\Control\SystemInformation"; name = "SystemProductName"; value = "VIRTUALBOX" },
     @{ company = "VBOX"; path = "HKLM:\SYSTEM\CurrentControlSet\Enum\PCI\VEN_80EE" },
     @{ company = "VBOX"; path = "HKLM:\SOFTWARE\Oracle\VirtualBox Guest Additions"},
     @{ company = "VBOX"; path = "HKLM:\SYSTEM\ControlSet001\Services\VBoxGuest" },
@@ -152,17 +118,6 @@ $registryKeys = @(
     @{ company = "VBOX"; path = "HKLM:\SYSTEM\ControlSet001\Services\VBoxVideo" },
       
     #VMware
-    @{ company = "VMWARE"; path = "HKLM:\HARDWARE\Description\System"; name = "SystemBiosVersion"; value = "VMWARE" },
-    @{ company = "VMWARE"; path = "HKLM:\HARDWARE\Description\System"; name = "SystemBiosVersion"; value = "INTEL - 6040000" },
-    @{ company = "VMWARE"; path = "HKLM:\HARDWARE\Description\System"; name = "VideoBiosVersion"; value = "VMWARE" },
-    @{ company = "VMWARE"; path = "HKLM:\HARDWARE\Description\System\BIOS"; name = "SystemProductName"; value = "VMware" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet001\Services\Disk\Enum"; name = "0"; value = "VMware" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet001\Services\Disk\Enum"; name = "1"; value = "VMware" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet001\Services\Disk\Enum"; name = "DeviceDesc"; value = "VMware" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet001\Services\Disk\Enum"; name = "FriendlyName"; value = "VMware" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet002\Services\Disk\Enum"; name = "DeviceDesc"; value = "VMware" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet002\Services\Disk\Enum"; name = "FriendlyName"; value = "VMware" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet003\Services\Disk\Enum"; name = "DeviceDesc"; value = "VMware" },
     @{ company = "VMWARE"; path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall"; name = "DisplayName"; value = "vmware tools" },
     @{ company = "VMWARE"; path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\VMware tools" },
     @{ company = "VMWARE"; path = "HKLM:\SOFTWARE\VMware, Inc.\VMware Tools" },
@@ -171,10 +126,6 @@ $registryKeys = @(
     @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet001\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\0000"; name = "InfSection"; value = "vmx" },
     @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet001\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\0000"; name = "ProviderName"; value = "VMware" },
     @{ company = "VMWARE"; path = "HKLM:\SYSTEM\ControlSet001\Control\Class\{4D36E968-E325-11CE-BFC1-08002BE10318}\0000\Settings"; name = "Device Description"; value = "VMware" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\CurrentControlSet\Control\SystemInformation"; name = "SystemProductName"; value = "VMWARE" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\CurrentControlSet\Control\Video\{GUID}\Video"; name = "Service"; value = "vm3dmp" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\CurrentControlSet\Control\Video\{GUID}\Video"; name = "Service"; value = "vmx_svga" },
-    @{ company = "VMWARE"; path = "HKLM:\SYSTEM\CurrentControlSet\Control\Video\{GUID}\0000"; name = "Device Description"; value = "VMware SVGA" },
     @{ company = "VMWARE"; path = "HKLM:\SYSTEM\CurrentControlSet\Enum\PCI\VEN_15AD" },
     @{ company = "VMWARE"; path = "HKLM:\SYSTEM\CurrentControlSet\Enum\IDE\CdRomNECVMWar_VMware_IDE_CD" },
     @{ company = "VMWARE"; path = "HKLM:\SYSTEM\CurrentControlSet\Enum\CdRomNECVMWar_VMware_SATA_CD" },
@@ -207,7 +158,6 @@ $registryKeys = @(
     @{ company = "General"; path = "HKLM:\SOFTWARE\Classes\Folder\shell\sandbox"},
       
     #XEN
-    @{ company = "XEN"; path = "HKLM:\HARDWARE\Description\System\BIOS"; name = "SystemProductName"; value = "Xen" },
     @{ company = "XEN"; path = "HKLM:\HARDWARE\ACPI\DSDT\xen"},
     @{ company = "XEN"; path = "HKLM:\HARDWARE\ACPI\FADT\xen"},
     @{ company = "XEN"; path = "HKLM:\HARDWARE\ACPI\RSDT\xen"}
