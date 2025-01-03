@@ -8,14 +8,13 @@
 # GitHub issues: https://github.com/Always-A-Virtual-Machine/issues
 # GitHub pull requests: https://github.com/PrimeMonket/Always-A-Virtual-Machine/pulls
 
-#Window Variables
-#Check for administrator.
+#check for admin privs
 $admin = ([Security.Principal.WindowsPrincipal] `
     [Security.Principal.WindowsIdentity]::GetCurrent() `
 ).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
 #registries
-#Loop to check and add registry key or key data
+#loop to check and add reg key or key and val
 function check_registry {
     param (
         [string]$company,
@@ -26,7 +25,7 @@ function check_registry {
 
     $regPath = "$path"
 
-      #Check registry path, create if not
+      #check registry path else create
     if (-not (Test-Path -Path $regPath)) {
         New-Item -Path $regPath -Force | Out-null
         Write-Host "[[38;2;94;214;114m$company[0m] - Key created in ==> $path."
@@ -34,7 +33,7 @@ function check_registry {
         Write-Host "[[38;2;239;75;75m$company[0m] - Key already exists in ==> $path."
     }
 
-      #If name + value are provided, check registry key exists
+      #for name + value provided check that registry key exists
     if ($name -and $value) {
         try {
             $existingValue = (Get-ItemProperty -Path $regPath -Name $name -ErrorAction Stop).$name
@@ -57,7 +56,7 @@ function check_Directory {
 
     $DirectoryPath = "$path"
 
-      #Check directory path exists, create if not
+      #check directory path exists else create if not
     if (-not (Test-Path -Path $DirectoryPath)) {
         New-Item -Path $DirectoryPath -ItemType Directory -Force | Out-null
         Write-Host "[[38;2;94;214;114m$company[0m] - Directory created in ==> $path."
@@ -65,11 +64,11 @@ function check_Directory {
         Write-Host "[[38;2;239;75;75m$company[0m] - Directory already exists in ==> $path."
     }
 
-      #Check if file exists in directory, if a name is set
+      #check if the file exists in that dir
     if ($name) {
         $FilePath = Join-Path -Path $DirectoryPath -ChildPath $name
         if (-not (Test-Path -Path $FilePath)) {
-            #Create an empty file as a placeholder
+            #empty file
             New-Item -Path $FilePath -ItemType File -Force | Out-Null
             Write-Host "[[38;2;94;214;114m$company[0m] - $name file created in ==> $path with name $name."
         } else {
@@ -78,9 +77,6 @@ function check_Directory {
     }
 }
 
-
-
-  #List of keys to be checked and created if not (has values)
 $registryKeys = @(
       
     #KVM
@@ -171,7 +167,7 @@ $registryKeys = @(
 
 
 
-#Directories
+#Dirs
 #qemu kvm {(general) virtual machine files} cuckoo
 $DirectoryLocations = @(
       
@@ -205,16 +201,9 @@ foreach ($key in $registryKeys) {
 
 $results = $Directorys + $Registries
 Write-Host $results
-#Write-Host $CoreOS
 
-#$logFilePath = "AAVM.log"
-#New-Item -Path $logFilePath -ItemType File -Force | Out-Null
-
-# Append the directories to the log file
-#Add-Content -Path "./AAVM.log" -Value $Directorys
-
-Write-Host("[38;2;94;214;114m[-] A.A.VM has manipulating the system, check the log file or CLI for system chnages.");
-Write-Host("[38;2;94;214;114mTO help support the project:");
+Write-Host("[38;2;94;214;114m[-] A.A.VM has finished manipulating the system, check the log file or CLI for system chnages.");
+Write-Host("[38;2;94;214;114mTo help support the project and others:");
 Write-Host("[38;2;94;214;114m    https://github.com/PrimeMonket/Always-A-Virtual-Machine/ ");
 Write-Host("[38;2;94;214;114m    https://github.com/kernelwernel/VMAware/ ")
 Write-Host("[38;2;94;214;114m    https://github.com/a0rtega/pafish/ ")
